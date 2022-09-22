@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator and Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <section class="calculator-container">
+        <div class="calculator">
+            <div class="inputCalculatior" id="inputCalculatior"></div>
+            <div class="buttons">
+              <div class="operators">
+               
+                  <button class="operators-button" role="button">+</button>
+                
+                  <button class="operators-button" role="button">-</button>
+                  <button class="operators-button" role="button">&times;</button>
+                  <button class="operators-button" role="button">&divide;</button>
+              </div>
+              <div class="leftPanel">
+                <div class="numbers">
+         
+                <button class="numbers-button" role="button">7</button>
+
+              
+                <button class="numbers-button" role="button">8</button>
+            
+                <button class="numbers-button" role="button">9</button>
+                </div>
+                <div class="numbers">
+               
+                  <button class="numbers-button" role="button">4</button>
+                
+                  <button class="numbers-button" role="button">5</button>
+               
+                  <button class="numbers-button" role="button">6</button>
+                </div>
+                <div class="numbers">
+                  <button class="numbers-button" role="button">1</button>
+                  <button class="numbers-button" role="button">2</button>
+                  <button class="numbers-button" role="button">3</button>
+                </div>
+                <div class="numbers">
+                  <button class="numbers-button" role="button">0</button>
+                  <button class="numbers-button" role="button">.</button>
+                  <button  id="clear" class="numbers-button" role="button">C</button>
+                </div>
+              </div>
+            <button class="operators-button equal"   id="result" role="button">=</button>
+            </div>
+          </div>
+    </section>
+
+
+    <section class="weather pb-5">
+        <h1 class="text-center  text-white ">Weather Of Today</h1>
+        <div class="input-group mb-3 w-50 mx-auto mt-5">
+            <input id="input" type="text" class="form-control" placeholder="Input Your City" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button  onclick="loadWeater()" class="btn btn-outline-secondary bg-success text-white" type="button" id="button">Button</button>
+          </div>
+        <div id="weather">
+            
+        </div>
+    </section>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
